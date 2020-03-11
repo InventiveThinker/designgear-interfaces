@@ -1,7 +1,7 @@
 ﻿
 Public Class Configuration
     '<DB> Database Id
-    Public Property Id As String
+    Public Property Id As Long
 
     '<Internal> Interlal Id
     Public Property InternalId As String

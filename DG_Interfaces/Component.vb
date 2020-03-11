@@ -3,7 +3,7 @@
 
 Public Class Component
     '<DB> Database Id
-    Public Property Id As String
+    Public Property Id As Long
 
     '<Internal> Interlal Component Id
     Public Property InternalId As String
@@ -35,21 +35,10 @@ Public Class Component
     '<UI> List of sub component templates
     Public Property ComponentTemplates As New List(Of Component)
 
-    Public Property CurrentConfiguration As DG_Interfaces.Configuration
-        Get
-            Return Nothing
-        End Get
-        Set(value As DG_Interfaces.Configuration)
-        End Set
-    End Property
+    Public Property CurrentConfiguration As Configuration
 
-    Public Property Dependencies As System.Collections.Generic.List(Of DG_Interfaces.Dependency)
-        Get
-            Return Nothing
-        End Get
-        Set(value As System.Collections.Generic.List(Of DG_Interfaces.Dependency))
-        End Set
-    End Property
+    Public Property Dependencies As New List(Of DG_Interfaces.Dependency)
+
 End Class
 Public Enum ComponetTypeEnum
     PartInstance 'Does not have sub components

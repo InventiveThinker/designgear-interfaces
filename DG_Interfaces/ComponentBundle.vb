@@ -4,7 +4,7 @@
 'DA Activities and work Items derive from the component bundle
 Public Class ComponentBundle
     '<DB> Database Id
-    Public Property Id As String
+    Public Property Id As Long
 
     '<Internal> Internal Component Id
     Public Property InternalId As String

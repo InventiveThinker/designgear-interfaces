@@ -1,6 +1,6 @@
 ﻿Public Class Parameter
     '<DB> Database Id
-    Public Property Id As String
+    Public Property Id As Long
 
     '<Internal> Internal Component Id
     Public Property InternalId As String
