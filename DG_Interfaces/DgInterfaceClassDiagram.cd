@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DG_Interfaces.Component">
+    <Position X="8.75" Y="4" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAABAAICQQAAgQAAAAAAAAAAAAUAAAAAAEEA=</HashCode>
+      <FileName>Component.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+      <Property Name="CurrentConfiguration" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Components" />
+      <Property Name="ComponentTemplates" />
+      <Property Name="Configurations" />
+      <Property Name="Dependencies" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DG_Interfaces.ComponentBundle">
+    <Position X="5.25" Y="4" Width="1.75" />
+    <AssociationLine Name="AllowedTasks" Type="DG_Interfaces.DaTask">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.188" Y="0.254" Height="0.182" Width="1.043" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Tasks" Type="DG_Interfaces.DaTask">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.819" Y="0.254" Height="0.182" Width="0.682" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAACAAAAgAACAAAASAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>ComponentBundle.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ComponentDefinition" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="AllowedTasks" />
+      <Property Name="Dependencies" />
+      <Property Name="Tasks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DG_Interfaces.Configuration">
+    <Position X="12.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAAAAAAAAAAAgAAQAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Configuration.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Parameters" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DG_Interfaces.DaTask" Collapsed="true">
+    <Position X="5.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>DaTask.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DG_Interfaces.Dependency">
+    <Position X="5.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Dependency.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DG_Interfaces.OutputBundle">
+    <Position X="8.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAACAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OutputBundle.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Dependencies" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DG_Interfaces.Parameter">
+    <Position X="11.75" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAEAAAAAgEQIAAgAAQAAAAAAAAAgQAgAAIAEAA=</HashCode>
+      <FileName>Parameter.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DG_Interfaces.My.MySettings" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="DG_Interfaces.ComponetTypeEnum">
+    <Position X="9" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAEAAAAAEAAAAAAAIAAQAAAAAA=</HashCode>
+      <FileName>Component.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DG_Interfaces.DaTaskTypeEnum">
+    <Position X="5.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIAAAAAAAAA=</HashCode>
+      <FileName>DaTask.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DG_Interfaces.ValueTypeEnum">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAgAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parameter.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Module Name="DG_Interfaces.My.Resources.Resources" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="DG_Interfaces.My.MySettingsProperty" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
