@@ -87,7 +87,7 @@ Imports DG_Interfaces
             .TargetDocument = "TankWall.iam"}
 
         'Add dependent files
-        compBundle.Dependencies.Add(New Dependency With {.FileName = "TankWall.zip", .IsCompressed = True})
+        compBundle.ModelFilesZip = "TankWall.zip"
 
         'Add AllowedTasks
         compBundle.AllowedTasks.Add(New DaTask With {.Type = DaTaskTypeEnum.UpdateModel})

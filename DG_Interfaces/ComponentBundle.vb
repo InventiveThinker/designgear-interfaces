@@ -13,7 +13,7 @@ Public Class ComponentBundle
     Public Property TargetDocument As String
 
     'List of required files
-    Public Property Dependencies As New List(Of Dependency)
+    Public Property ModelFilesZip As String
     Public Property Tasks As New List(Of DaTask)
     Public Property AllowedTasks As New List(Of DaTask)
 
